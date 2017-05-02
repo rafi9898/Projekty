@@ -426,7 +426,7 @@ img.Bayern:hover {
 
 .texts2 p {
     float:left;
-    padding-bottom: 30vh;
+    padding-bottom: 15vh;
     margin-right: 20vh;
     margin-left: 30vh;
     text-align: justify;
@@ -580,4 +580,108 @@ i.icon-twitter-squared:hover {
  
 .show {
 	opacity: 1;
+}
+
+
+@media screen and (max-width: 1000px) {
+    
+    #nav > ol {
+        display: none;
+    }
+    
+    ol.login > li {
+        display: none;
+    }
+    
+    .lewa, .prawa{
+      width:60%;
+      float: left; 
+}
+
+    .lewa img {
+        float: left;
+        width: 325%;
+        margin-top: 20%;
+        margin-left:180%;
+}
+
+    .prawa img {
+        width: 300%;
+        margin-right: 200%;
+        margin-top: 20%;
+        float: right;
+}
+    
+    .texts2 {
+    display: inline-block;
+}
+    .texts2 img.screen {
+    width: 60%;
+    float: left;
+    padding-right: 5%;
+    
+}
+
+.texts2 h1.info {
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
+    padding-top: 6vh;
+    padding-bottom: 11vh;
+    margin-left: 4vw;
+    font-size: 48px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+
+.texts2 p {
+    float:left;
+    padding-bottom: 15vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+    
+    
+    .fontelloc i {
+    cursor: pointer;
+    background-color: #dddddd;
+    font-size: 340%;
+    border-radius: 30px 30px;
+    opacity: 1;
+    transform: scale(1,1);
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+    
+    #footer p {
+    text-align: center;
+    font-family: monospace;
+    font-size: 19px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #dddddd;
+}
+    
+    #footer ol > li > a {
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 15px;
+    text-align: center;
+}
+    
+    #nav img.left {
+        margin-bottom: 5%;
+        margin-top: 5%;
+        width: 37%;
+    }
+
 }
