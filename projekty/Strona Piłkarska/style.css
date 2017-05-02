@@ -367,14 +367,14 @@ img.Bayern:hover {
 
 .lewa img {
     float: left;
-    width: 30%;
+    width: 225%;
     margin-top: 20%;
-    margin-left: 52%;
+    margin-left:255%;
 }
 
 .prawa img {
-    width: 26%;
-    margin-right: 60%;
+    width: 200%;
+    margin-right: 280%;
     margin-top: 20%;
     float: right;
 }
@@ -388,6 +388,8 @@ img.Bayern:hover {
 
 #player {
     float: left;
+    width: 390%;
+    margin-left: 29%;
 
 }
 
