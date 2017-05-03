@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://content.jwplatform.com/libraries/mnKb8Z0X.js"></script>
     <link rel="stylesheet" href="css/fontello.css" type="text/css" />
     <link rel="stylesheet" href="animate.css" type="text/css">
@@ -40,6 +41,7 @@
                 <ol>
                     <li><a class="active" href="index.html">STRONA GŁÓWNA</a></li>
                     <li><a class="pick1">OGLĄDAJ ↓</a></li>
+                    
                     <div class="pick">
                         
                             <a href="#"><img class="real" src="img/real-madrid.png" alt="Logo Real Madrid przezroczyste"></a>
@@ -54,15 +56,39 @@
                     </div>
                     <li><a class="anim" href="#">PROGRAM</a></li>
                 </ol>
-                
-                
+
                 
                 <ol class="login">
                     <li><a class="backgl" href="#">ZALOGUJ</a></li>
                     <li><a class="backg" href="#">ZAREJESTRUJ</a></li>
                 </ol>
-                
-                
+                <div id="nav-icon">
+    <span><i class="fa fa-bars"></i></span>
+</div>
+ 
+<div class="left-menu">
+    <ul>
+        <li>
+            <a href="#" target="_blank">Strona Główna</a>
+        </li>
+        <li>
+            <hr>
+        </li>
+        <li>
+            <a href="#" target="_blank">Oglądaj</a>
+        </li>
+        <li>
+            <hr>
+        </li>
+        <li>
+            <a href="#" target="_blank">Zaloguj</a>
+        </li>
+            <hr>
+        <li>
+            <a href="#" target="_blank">Zarejestruj</a>
+        </li>
+        
+</div>
             </div>
           <div class="section1">
             <div class="lewa">
@@ -138,6 +164,13 @@
                 <p>&copy 2017 COPYRIGHT WSZYSTKIE PRAWA ZASTRZEŻONE.</p>
             </div>
         </div>
+        
+        <!--Wysuwane Menu-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="sliiide.min.js"></script>
+        <script>
+            $('.left-menu').sliiide({place: 'right', toggle: '#nav-icon'});
+        </script>
         
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
             <script src="jquery.viewportchecker.min.js"></script>

@@ -582,6 +582,10 @@ i.icon-twitter-squared:hover {
 	opacity: 1;
 }
 
+#nav-icon span {
+    display: none;
+}
+
 
 @media screen and (max-width: 1000px) {
     
@@ -683,5 +687,87 @@ i.icon-twitter-squared:hover {
         margin-top: 5%;
         width: 37%;
     }
+    
+    
+ /*Wysuwane Menu*/
+    
+    .left-menu {       
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      height: 100vh;
+      width: 60vw;
+      background: #65696d;
+      margin: 0;
+      padding: 0;
+  }
+ 
+  .left-menu ul {
+      list-style: none;
+      text-align: center;
+      padding: 0px;
+  }
+ 
+  .left-menu li {
+      margin: 30px auto;
+  }
+ 
+  .left-menu ul li a {
+      font-weight: bolder;
+      font-size: 18px;
+      color: #eff1f2;
+      text-decoration: none;
+      margin: 0px 15px;
+      text-transform: uppercase;
+  }
+ 
+  .left-menu ul li a:hover {
+      color: #c40f0f;
+  }
+ 
+  #nav-icon {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      cursor: pointer;
+  }
+ 
+  #nav-icon span {
+      font-size: 250%;
+      color: #2A3D45;
+      display: block;
+  }
 
+    
+}
+
+
+@media screen and (max-width: 500px) {
+   
+    #nav-icon span {
+      font-size: 170%;
+      color: #2A3D45;
+      display: block;
+  }
+    
+}
+
+@media screen and (max-width: 380px) {
+   
+    #nav-icon span {
+      font-size: 130%;
+      color: #2A3D45;
+      display: block;
+  }
+    
+}
+
+@media screen and (max-width: 340px) {
+   
+    #nav-icon span {
+      font-size: 100%;
+      color: #2A3D45;
+      display: block;
+  }
+    
 }
