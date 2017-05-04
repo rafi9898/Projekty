@@ -80,7 +80,6 @@
         <li>
             <hr>
         </li>
-        
         <li>
             <a href="timetable.php" target="_blank">Program</a>
         </li>
@@ -90,62 +89,29 @@
         <li>
             <a href="#" target="_blank">Zaloguj</a>
         </li>
-            <li>
-                <hr>
-            </li>
+            <hr>
         <li>
             <a href="#" target="_blank">Zarejestruj</a>
         </li>
         
 </div>
             </div>
-          <div class="section1">
-            <div class="lewa">
-            <img data-animate="fadeIn" src="http://www.pngpix.com/wp-content/uploads/2016/10/PNGPIX-COM-Cristiano-Ronaldo-PNG-Transparent-Image-1.png" alt="Ronaldo">
-            </div>
-
-
-            <!--Tło multimedialne-->
-                <video autoplay loop muted id="bg-video"> 
-                     <source src="UEFA_Champions_League_2015_2016_Intro_HD_PES_2016_.webm" type="video/webm"> 
-                     <source src="UEFA Champions League 2015 2016 Intro HD (PES 2016 Intro).mp4" type="video/mp4"> 
-                     <source src="UEFA_Champions_League_2015_2016_Intro_HD_PES_2016_.ogv" type="video/ogv">
-                </video>
-                <div id="player">
-                <div id="myElement"></div>
-                <script>
-      var playerInstance = jwplayer("myElement");
-      playerInstance.setup({
-      image: "http://content.jwplatform.com/thumbs/qXS1oind-1280.jpg",
-      width: "41%",
-      aspectratio: "16:9",
-      sources: [{
-        file: "http://content.jwplatform.com/videos/qXS1oind-JtBrAYOi.mp4",
-        label: "720p HD"
-      },{
-        file: "http://content.jwplatform.com/videos/qXS1oind-mXAaqNQX.mp4",
-        label: "406p SD",
-        "default": "true"
-      },{
-        file: "http://content.jwplatform.com/videos/qXS1oind-cCMX70i5.mp4",
-        label: "180p Web"
-      }]
-    });
-</script>
-</div>
-              <div data-animate="fadeIn" class="prawa">
-<img src="https://fcbayern.com/binaries/content/gallery/fc-bayern/players/fullBodyShots/19800_lewandowski_60462.png/19800_lewandowski_60462.png/fcbhippo%3AfullBodyShotHd" alt="Lewy">
-</div>
-</div>
-            <a name="informacje"></a>
+          
             <div class="section2">
-                <div class="texts2">
-                    
-                    <h1 data-animate="fadeIn" class="info">Informacje</h1>
-                    <div class="lines2">
+                <div class="htime"><h1>Tabela Rozgrywek</h1></div>
+                <div class="texts2 table1">
                     
                     
-                    <p data-animate="fadeIn"><img data-animate="fadeIn" class="screen" src="img/screen.png" alt="Ekran monitora z otwartą stroną internetową">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, tellus ac consectetur hendrerit, mi nisl rhoncus mauris, ac dapibus libero nisl vel arcu. Fusce a magna id odio maximus vehicula. Nunc laoreet volutpat semper. Etiam eget lectus sed enim vulputate efficitur in non risus. Fusce molestie efficitur consequat. Aliquam vitae ex hendrerit, interdum nibh dignissim, congue dolor. Phasellus malesuada tellus vitae semper congue. Ut dictum justo at est faucibus rutrum. Nam vel convallis leo, a interdum dui. Sed felis neque, cursus sed lorem efficitur, tristique bibendum ligula. Phasellus porta lorem et convallis egestas.</p></div>
+<p><table>
+    <tr><th class="time-t">Czas</th><th class="team-t">Drużyny</th></tr>
+    <tr><td class="time-t">16:45</td><td class="team-t">Polska - Portugalia</td></tr>
+    <tr><td class="time-t">19:30</td><td class="team-t">Real Madryt - FC Barcelona</td></tr>
+    <tr><td class="time-t">20:45</td><td class="team-t">Legia Warszawa - Arsenal</td></tr>
+</table></p>
+                    
+                    
+                
+                </div>
                     
                     
                 </div>
@@ -164,7 +130,7 @@
             <div id="footer">
                 <div class="footerline">
                 <ol>
-                    <li><a href="#informacje">O Stronie</a></li>    
+                    <li><a href="index.html#informacje">O Stronie</a></li>    
                     <li><a href="#">Rejestracja</a></li>    
                     <li><a href="#">Regulamin</a></li>    
                     <li><a href="#">Kontakt</a></li>    
