@@ -5,6 +5,15 @@ $('.pick').slideToggle();
 });
 
 $(document).ready(function(){
+$('.backgl').click(function(){
+$('.login-push').slideToggle();
+})
+$('.cancel-icon').click(function(){
+$('.login-push').slideToggle();
+})
+});
+
+$(document).ready(function(){
  
 		$('*[data-animate]').addClass('hide').each(function(){
       $(this).viewportChecker({
