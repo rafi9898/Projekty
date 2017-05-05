@@ -101,8 +101,10 @@
                 <div class="hstream"><h1>Juventus - Real Madryt</h1></div>
                 <div class="texts2 table1">
                     
+                    <div class="progress1"><progress id="prog1" value="30" max="100">30% vs 70%</progress></div>
                     
-<p><div class="player-stream">
+                    
+                <p><div class="player-stream">
                 <div id="myElement"></div>
                 <script>
       var playerInstance = jwplayer("myElement");
