@@ -638,6 +638,26 @@ i.icon-twitter-squared:hover {
 }
 
 
+.player-stream {
+    float: left;
+    width: 60vw;
+    margin-left: 32%;
+    padding-top: 3vh;
+    padding-bottom: 16vh;
+}
+
+.hstream {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.hstream h1 {
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+}
+
+
 @media screen and (max-width: 1000px) {
     
     #nav {
@@ -792,6 +812,17 @@ i.icon-twitter-squared:hover {
       color: #2A3D45;
       display: block;
   }
+    
+    .hstream {
+    text-align: center;
+    padding-top: 17%;
+}
+
+.hstream h1 {
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+}
 
     
 }

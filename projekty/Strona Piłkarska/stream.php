@@ -95,19 +95,56 @@
         </li>
         
 </div>
-            </div>
-          
-            <div class="section2">
-                <div class="htime"><h1>Tabela Rozgrywek</h1></div>
+            </div>             
+                              
+     <div class="section2">
+                <div class="hstream"><h1>Juventus - Real Madryt</h1></div>
                 <div class="texts2 table1">
                     
                     
-<p><table>
-    <tr><th class="time-t">Czas</th><th class="team-t">Drużyny</th></tr>
-    <tr><td class="time-t">16:45</td><td class="team-t">Polska - Portugalia</td></tr>
-    <tr><td class="time-t">19:30</td><td class="team-t">Real Madryt - FC Barcelona</td></tr>
-    <tr><td class="time-t">20:45</td><td class="team-t">Legia Warszawa - Arsenal</td></tr>
-</table></p>
+<p><div class="player-stream">
+                <div id="myElement"></div>
+                <script>
+      var playerInstance = jwplayer("myElement");
+      playerInstance.setup({
+      image: "http://content.jwplatform.com/thumbs/qXS1oind-1280.jpg",
+      width: "100%",
+      aspectratio: "16:9",
+      sources: [{
+        file: "http://content.jwplatform.com/videos/qXS1oind-JtBrAYOi.mp4",
+        label: "720p HD"
+      },{
+        file: "http://content.jwplatform.com/videos/qXS1oind-mXAaqNQX.mp4",
+        label: "406p SD",
+        "default": "true"
+      },{
+        file: "http://content.jwplatform.com/videos/qXS1oind-cCMX70i5.mp4",
+        label: "180p Web"
+      }]
+    });
+</script>
+</div></p>
+         
+         <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://sportslivecom.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                     
                     
                 
@@ -115,16 +152,9 @@
                     
                     
                 </div>
-            </div>
-            
-            <div class="section3">
-                
-                <h1 data-animate="fadeIn" class="medias">Media Społecznościowe</h1>
-                <div data-animate="fadeIn" class="fontelloc">
-                <i data-animate="fadeIn" class="icon-facebook"></i>
-                <i data-animate="fadeIn" class="icon-youtube"></i>
-                <i data-animate="fadeIn" class="icon-twitter-squared"></i>
-                    </div>
+                    
+                    
+                </div>
             </div>
             
             <div id="footer">
@@ -139,6 +169,7 @@
                 <p>&copy 2017 COPYRIGHT WSZYSTKIE PRAWA ZASTRZEŻONE.</p>
             </div>
         </div>
+
         
         <!--Wysuwane Menu-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
