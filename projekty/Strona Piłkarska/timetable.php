@@ -59,7 +59,7 @@
 
                 
                 <ol class="login">
-                    <li><a class="backgl" href="#">ZALOGUJ</a></li>
+                    <li><a class="backgl login-up" href="#">ZALOGUJ</a></li>
                     <li><a class="backg" href="#">ZAREJESTRUJ</a></li>
                 </ol>
                 <div id="nav-icon">
@@ -87,7 +87,7 @@
                 <hr>
             </li>
         <li>
-            <a href="#" target="_blank">Zaloguj</a>
+            <a class="login-up" href="#">Zaloguj</a>
         </li>
             <hr>
         <li>
@@ -113,6 +113,20 @@
                 
                 </div>
                     
+                <div class="login-push">
+                    
+                    <img class="cancel-icon" src="img/cancel-icon.png" alt="Cancel-Icon">
+                    
+                    <h1>Zaloguj się!</h1>
+                    
+                    <form>
+                
+                        <input type="text" placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
+                        <input type="password" placeholder="Hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
+                        <input type="submit" value="Zaloguj się!">
+                
+                    </form>
+                </div>
                     
                 </div>
             </div>

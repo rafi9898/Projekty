@@ -5,7 +5,7 @@ $('.pick').slideToggle();
 });
 
 $(document).ready(function(){
-$('.backgl').click(function(){
+$('.login-up').click(function(){
 $('.login-push').slideToggle();
 })
 $('.cancel-icon').click(function(){
