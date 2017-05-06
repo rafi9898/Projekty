@@ -101,11 +101,10 @@
                 <div class="hstream">
                     <h1 class="register-h1">Zarejestruj się!</h1>
                     <div class="register-style">
-                    <form method="post">
+                    <form method="post" action="register-config.php">
                     <p>Login: <input type="text" name="login"></input></p>
                     <p>E-mail: <input type="text" name="email"></input></p>
-                    <p>Hasło: <input type="password" name="haslo1"></input></p>
-                    <p>Powtórz Hasło: <input type="password" name="haslo2"></input></p>
+                    <p>Hasło: <input type="password" name="haslo"></input></p>
                     <label><p><input type="checkbox" name="regulamin"> Akcetpuje Regulamin!</p></label>
                     <p><input type="submit" value="Zarejestruj Się!"></p>
                     </form>
@@ -125,9 +124,9 @@
                     
                     <form>
                 
-                        <input type="text" placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
-                        <input type="password" placeholder="Hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
-                        <input type="submit" value="Zaloguj się!">
+                        <input type="text" name="login" placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
+                        <input type="password" name="password" placeholder="Hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
+                        <input type="submit" name="login" value="Zaloguj się!">
                 
                     </form>
                 </div>

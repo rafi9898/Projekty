@@ -121,9 +121,9 @@
                     
                     <form>
                 
-                        <input type="text" placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
-                        <input type="password" placeholder="Hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
-                        <input type="submit" value="Zaloguj się!">
+                        <input type="text" name="login" placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
+                        <input type="password" name="password" placeholder="Hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
+                        <input type="submit" name="login" value="Zaloguj się!">
                 
                     </form>
                 </div>
