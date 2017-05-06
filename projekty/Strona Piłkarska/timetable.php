@@ -60,7 +60,7 @@
                 
                 <ol class="login">
                     <li><a class="backgl login-up" href="#">ZALOGUJ</a></li>
-                    <li><a class="backg" href="#">ZAREJESTRUJ</a></li>
+                    <li><a class="backg" href="register.php">ZAREJESTRUJ</a></li>
                 </ol>
                 <div id="nav-icon">
     <span><i class="fa fa-bars"></i></span>
@@ -91,7 +91,7 @@
         </li>
             <hr>
         <li>
-            <a href="#" target="_blank">Zarejestruj</a>
+            <a href="register.php">Zarejestruj</a>
         </li>
         
 </div>
@@ -145,7 +145,7 @@
                 <div class="footerline">
                 <ol>
                     <li><a href="index.html#informacje">O Stronie</a></li>    
-                    <li><a href="#">Rejestracja</a></li>    
+                    <li><a href="register.php">Rejestracja</a></li>    
                     <li><a href="#">Regulamin</a></li>    
                     <li><a href="#">Kontakt</a></li>    
                 </ol>

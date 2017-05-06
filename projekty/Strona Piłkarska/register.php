@@ -97,56 +97,24 @@
 </div>
             </div>             
                               
-     <div class="section2">
-                <div class="hstream"><h1>Juventus - Real Madryt</h1></div>
-                <div class="texts2 table1">
-                    
-                    <div class="progress1"><progress id="prog1" value="30" max="100">30% vs 70%</progress></div>
-                    
-                    
-                <p><div class="player-stream">
-                <div id="myElement"></div>
-                <script>
-      var playerInstance = jwplayer("myElement");
-      playerInstance.setup({
-      image: "http://content.jwplatform.com/thumbs/qXS1oind-1280.jpg",
-      width: "100%",
-      aspectratio: "16:9",
-      sources: [{
-        file: "http://content.jwplatform.com/videos/qXS1oind-JtBrAYOi.mp4",
-        label: "720p HD"
-      },{
-        file: "http://content.jwplatform.com/videos/qXS1oind-mXAaqNQX.mp4",
-        label: "406p SD",
-        "default": "true"
-      },{
-        file: "http://content.jwplatform.com/videos/qXS1oind-cCMX70i5.mp4",
-        label: "180p Web"
-      }]
-    });
-</script>
-</div></p>
+     <div class="section2 register-form">
+                <div class="hstream">
+                    <h1 class="register-h1">Zarejestruj się!</h1>
+                    <div class="register-style">
+                    <form method="post">
+                    <p>Login: <input type="text" name="login"></input></p>
+                    <p>E-mail: <input type="text" name="email"></input></p>
+                    <p>Hasło: <input type="password" name="haslo1"></input></p>
+                    <p>Powtórz Hasło: <input type="password" name="haslo2"></input></p>
+                    <label><p><input type="checkbox" name="regulamin"> Akcetpuje Regulamin!</p></label>
+                    <p><input type="submit" value="Zarejestruj Się!"></p>
+                    </form>
+                </div>
+                </div>
+                
+</div>
          
          <div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://sportslivecom.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                     
                  
          <div class="login-push">
