@@ -1,0 +1,23 @@
+//Wszyscy u¿ytkownicy zarejestrowani
+
+<?php
+
+                       $mysqli = new mysqli('localhost', 'root', '', 'users');
+                       $sql = 'SELECT username, avatar FROM users';
+                       $result = $mysqli->query($sql); 
+
+                    ?>
+                        
+                        <div id="registered">
+                        <span>Wszyscy zarejestrowani u¿ytkownicy</span>  
+                            
+                        <?php
+                          
+                            while($row = $result->fetch_assoc()) {
+                                
+                                echo "<div class='userlist'><span>$row[username]</span><br />";
+                                echo "<img src='$row[avatar]'><div>";
+                                
+                            }
+                            
+                        ?>

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -55,12 +56,13 @@
                        
                     </div>
                     <li><a class="anim" href="timetable-user.php">PROGRAM</a></li>
+                    <li><div class="username-show"><span style="color: #dddddd; font-weight: bold;">Witaj</span> <?= $_SESSION['username'] ?></div> <span class="user"><img src='<?= $_SESSION['avatar'] ?>'</span></li>
                 </ol>
 
                 
                 <ol class="login">
                     <li><a class="backgl myprofil-icon" href="#">MÓJ PROFIL</a></li>
-                    <li><a class="backg" href="#">WYLOGUJ</a></li>
+                    <li><a class="backg" href="logout.php">WYLOGUJ</a></li>
                 </ol>
                 <div id="nav-icon">
     <span><i class="fa fa-bars"></i></span>
@@ -91,7 +93,7 @@
         </li>
             <hr>
         <li>
-            <a href="#">Wyloguj</a>
+            <a href="logout.php">Wyloguj</a>
         </li>
         
 </div>

@@ -1,3 +1,33 @@
+<?php
+
+session_start();
+//Połączenie z bazą
+$db = mysqli_connect("localhost", "root", "", "users");
+
+if (isset($_POST['rejestruj'])) {
+    session_start();
+    $username = mysql_real_escape_string($_POST['username']);
+    $email = mysql_real_escape_string($_POST['email']);
+    $password = mysql_real_escape_string($_POST['haslo1']);
+    $password2 = mysql_real_escape_string($_POST['haslo2']);
+    
+    if ($password == $password2){
+        
+        //Stworzenie użytkownika
+        $password = md5($password);
+        $sql = "INSERT INTO users(username, email, password) VALUES('$username', '$email', '$password')";
+        mysqli_query($db, $sql);  
+        $_SESSION['message'] = "Zostałeś zalogowany pomyślnie!";
+        $_SESSION['username'] = $username;
+        header("location: home.php");
+    } else {
+        
+        $_SESSION['message'] = "Podane hasła nie są takie same!";
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -101,12 +131,13 @@
                 <div class="hstream">
                     <h1 class="register-h1">Zarejestruj się!</h1>
                     <div class="register-style">
-                    <form method="post" action="register-config.php">
-                    <p>Login: <input type="text" name="login"></input></p>
-                    <p>E-mail: <input type="text" name="email"></input></p>
-                    <p>Hasło: <input type="password" name="haslo"></input></p>
-                    <label><p><input type="checkbox" name="regulamin"> Akcetpuje Regulamin!</p></label>
-                    <p><input type="submit" value="Zarejestruj Się!"></p>
+                    <form method="post" enctype="multipart/form-data" action="register.php">
+                    <p>Login: <input type="text" name="username" required></input></p>
+                    <p>E-mail: <input type="text" name="email" required></input></p>
+                    <p>Hasło: <input type="password" name="haslo1" required></input></p>
+                    <p>Powtórz Hasło: <input type="password" name="haslo2" required></input></p>
+                    <label><p><input type="checkbox" name="regulamin" required> Akcetpuje Regulamin!</p></label>
+                    <p><input type="submit" name="rejestruj" value="Zarejestruj Się!"></p>
                     </form>
                 </div>
                 </div>
@@ -126,7 +157,7 @@
                 
                         <input type="text" name="login" placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
                         <input type="password" name="password" placeholder="Hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
-                        <input type="submit" name="login" value="Zaloguj się!">
+                        <input type="submit" name="zaloguj" value="Zaloguj się!">
                 
                     </form>
                 </div>

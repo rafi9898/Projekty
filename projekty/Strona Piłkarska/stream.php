@@ -159,7 +159,7 @@ s.setAttribute('data-timestamp', +new Date());
                 
                         <input type="text" name="login" placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
                         <input type="password" name="password" placeholder="Hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
-                        <input type="submit" name="login" value="Zaloguj się!">
+                        <input type="submit" name="zaloguj" value="Zaloguj się!">
                 
                     </form>
                 </div>

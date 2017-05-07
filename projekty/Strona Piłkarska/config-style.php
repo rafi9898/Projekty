@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html lang="pl">
 <head>
     <meta charset="utf-8">
